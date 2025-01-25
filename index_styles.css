@@ -1,0 +1,189 @@
+/*
+    This style-sheet is specific to the Home page
+*/
+
+/* Header section */
+#ncc-1701 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 294.5px;
+    height: 102px;
+    filter: drop-shadow(20px 20px 5px rgba(0, 0, 0, 0.25));
+}
+
+.ncc-1701 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+/* This technique I learned it from cs50.ai Duck */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#ncc-1701 {
+    position: absolute;
+    animation: float 3s infinite ease-in-out;
+}
+
+mark {
+    color: #2f4858;
+    background-color: #ff606f;
+    border-radius: 5px;
+    animation: blinkBackground 1s infinite;
+}
+
+/* This technique I learned it from cs50.ai Duck */
+@keyframes blinkBackground {
+    0% {
+        background-color: #ff606f;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ff606f;
+    }
+}
+
+
+/* Main section */
+
+
+.main-elements {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 100px;
+}
+
+/* Egal image styles */
+.image-block {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+/* This technique I learned it from cs50.ai Duck */
+#main-image {
+    transition: transform 0.5s ease;
+    /* Smooth zoom */
+    width: 100%;
+    height: 100%;
+}
+
+#main-image:hover {
+    transform: scale(1.5);
+    /* Zoom in */
+}
+
+/* Text pragraph */
+.text-pragraph {
+    margin: 10px;
+    text-align: left;
+    font-size: medium;
+    padding: 15px;
+    width: auto;
+    height: auto;
+}
+
+#intro-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    /* Example of changing the font weight */
+}
+
+#intro-space {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    font-style: italic;
+
+}
+
+.space-text-size {
+    font-size: 10px
+}
+
+hr {
+    margin-top: 35px;
+    background-color: #dc3545;
+    width: 60%;
+    border-radius: 5px;
+    height: 6px;
+    border: none;
+
+}
+
+/* button styles */
+
+.contact-button {
+    margin-bottom: 200px;
+    color: #2f4858;
+}
+
+.bttn-size {
+    width: 160px;
+    height: 70px;
+}
+
+/* home page responsive to mobile devices */
+@media (max-width: 800px) {
+
+    .main-elements {
+        display: grid;
+        grid-template-rows: 60% 40%;
+        grid-template-columns: 100%;
+        margin-bottom: 100px;
+        height: auto;
+        width: auto;
+    }
+
+    .image-block {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+        position: relative;
+    }
+
+    .image-block {
+        transition: transform 0.5s ease;
+        width: 100%;
+        height: 100%;
+    }
+
+    #main-image:hover {
+        transform: scale(1.5);
+        /* Zoom in */
+    }
+
+    .text-pragraph {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    #ncc-1701 {
+        display: none;
+    }
+}

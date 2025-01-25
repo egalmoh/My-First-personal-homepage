@@ -1,0 +1,29 @@
+/*
+    This style-sheet is specific to the Services page
+*/
+
+.imgs-projects {
+    width: auto;
+    height: auto;
+    background-color: #f7f7f7;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.imgs-projects:hover {
+    background-color: #e7e7e7;
+}
+
+.img-pr-1 {
+    width: auto;
+    height: auto;
+}
+
+#list-services {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    list-style: none;
+    color: #2f4858;
+}

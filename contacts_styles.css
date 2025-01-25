@@ -1,0 +1,12 @@
+/*
+    This style-sheet is specific to the Contacts page
+*/
+
+#form-contact {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    margin-bottom: 200px;
+    width: auto;
+    height: auto
+}

@@ -1,0 +1,260 @@
+/* Global Styles */
+
+/*
+Header-section styles
+*/
+body {
+    /* I took the background image from pexels.com */
+    background-image: url("img/bg_6.jpg");
+}
+
+.container {
+    max-width: 1040px;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    bottom: 0;
+    padding: 0;
+    color: #2f4858;
+}
+
+.header-section {
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+/* I learned this CSS grid from youtube channel CareerFundry course */
+.grid-container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.header-image {
+    text-align: left;
+}
+
+#link-home-img:hover {
+    opacity: 0.75;
+}
+
+.nav-bar {
+    justify-content: center;
+}
+
+.pages-navigation {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Applying colors to the specific pages links */
+.nav-link {
+    color: #2f4858;
+}
+
+.nav-link:hover {
+    color: #ff606f;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* Example of changing the font weight */
+}
+
+/* Big header text */
+.page-header {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    color: #2f4858;
+}
+
+/*
+    Main-section styles
+*/
+.main-section {
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+h4 {
+    color: #2f4858;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* Example of changing the font weight */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:hover {
+    color: #ff606f;
+}
+
+
+/*
+    Footer-section styles
+*/
+.footer-section {
+    background-color: #2f4858;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.link-text {
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.ul-links {
+    list-style: none;
+}
+
+.text-terms-privacy {
+    margin-top: 20px;
+
+}
+
+.ul-pages {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    list-style: none;
+    margin: 5px;
+}
+
+
+/*
+    This technique was showed me by cs50.ai Duck
+ */
+
+/* Media queries make the pages responsive
+    to mobile devices and other devices
+*/
+@media (max-width: 800px) {
+
+    .container {
+        margin: 0 auto;
+        bottom: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .grid-container {
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .page-header {
+        margin-right: 0;
+        color: #2f4858;
+        width: auto;
+        height: auto;
+    }
+
+    .ul-pages {
+        display: grid;
+        grid-template-columns: auto;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+/* This technique was showed me by cs50.ai Duck, hamburger menu*/
+@media (max-width: 700px) {
+
+    .pages-navigation {
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu ul {
+        list-style-type: none;
+    }
+
+    #menu li {
+        margin: 10px 0;
+    }
+
+    .nav-bar {
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .imgs-projects {
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    #img-pr-1 {
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 700px) {
+    #menu {
+        display: block;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-contant {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-bottom: 40px;
+        text-align: left;
+    }
+}
